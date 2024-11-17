@@ -1,3 +1,6 @@
+body,html{
+    width: 100%;
+}
 header{
   position: sticky;  
   top: 0;
@@ -37,18 +40,17 @@ header{
     border: 2px solid blue; 
 }
 .twogere:hover{
-    background-color: white;
-    color: blue;
+    background-color:blue;
+    color: white;
 }
 .main-content{
     position: relative;
-    width: 200%;
+    width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 30px 100px;
-    max-width: 500px;
+    align-items: center;
+    justify-content: space-around;
+
 
 }
 .main-content h2 span{
@@ -87,4 +89,20 @@ margin-left: 10px;
 .btn-group .white-btn:hover{
     background-color:blue;
     color: white;
+}
+.profile-photo{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-infor{
+    max-width: 500px;
+}
+.profile-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:top;
+
 }
